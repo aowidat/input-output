@@ -1,0 +1,16 @@
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+
+  <br>
+  <br>
+
+  <br>
+
+
+<input type="text" [(ngModel)]="currentItem">
+
+<p> P P P from Parent: {{currentItem}}</p>
+
+<app-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-child>
