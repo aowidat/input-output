@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './pages/parent/parent.component';
 import { ChildComponent } from './pages/child/child.component';
 import { FormsModule } from '@angular/forms';
+import { LongClickDirective } from './long-click.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    LongClickDirective
   ],
   imports: [
     BrowserModule,

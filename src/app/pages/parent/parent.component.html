@@ -13,5 +13,8 @@
 
 <p> P P P from Parent: {{currentItem}}</p>
 
+<button (appLongClick)="longClick()" [longClickFunction]="longClick">Long Click Me</button>
+
+
 <app-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-child>
 </div>

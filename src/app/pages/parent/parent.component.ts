@@ -13,5 +13,8 @@ export class ParentComponent {
   addItem(newItem: string) {
     this.items.push(newItem);
   }
+  longClick(){
+    console.log("adlkadklasd")
+  }
 
 }
