@@ -13,6 +13,9 @@
 
 <p> P P P from Parent: {{currentItem}}</p>
 
+<div [innerHTML]="currentItem | safeHtml">
+</div>
+
 <button (appLongClick)="longClick()" [longClickFunction]="longClick">Long Click Me</button>
 
 

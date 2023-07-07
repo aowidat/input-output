@@ -7,13 +7,15 @@ import { ParentComponent } from './pages/parent/parent.component';
 import { ChildComponent } from './pages/child/child.component';
 import { FormsModule } from '@angular/forms';
 import { LongClickDirective } from './long-click.directive';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     ChildComponent,
-    LongClickDirective
+    LongClickDirective,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
